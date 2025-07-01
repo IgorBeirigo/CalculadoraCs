@@ -1,0 +1,21 @@
+# Pasta de configurações do Visual Studio
+.vs/
+
+# Pastas de build
+bin/
+obj/
+
+# Arquivos de build e cache
+*.exe
+*.dll
+*.pdb
+
+# Arquivos de configuração locais
+*.user
+*.suo
+
+# Outros arquivos gerados
+*.db
+*.db-shm
+*.db-wal
+*.log
