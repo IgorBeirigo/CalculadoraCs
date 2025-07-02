@@ -22,10 +22,14 @@ namespace Calculadora
 
                 switch (opcao)
                 {
+                    case Menu.soma:
+                        Soma();
+                        break;
                     case Menu.sair:
                         escolheuSair = true;
                         Console.WriteLine("Obrigado por usar o CALC!");
                         break;
+
                 }
 
                 Console.WriteLine(opcao);
@@ -34,9 +38,22 @@ namespace Calculadora
 
                 
             }
+          
 
 
         
         }
-    }
+        static void Soma()
+        {
+            Console.WriteLine("Soma de dois numeros:");
+            Console.Write("Digite o primeiro numero: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Digite o segundo numero: ");
+            int b = int.Parse(Console.ReadLine());
+            int resultado = a + b;
+            Console.WriteLine($"O resultado da soma é: {resultado}");
+            Console.WriteLine("Pressione qualquer tecla para continuar...");
+            Console.ReadLine();
+        }
+    }   
 }
